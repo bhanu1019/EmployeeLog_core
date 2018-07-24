@@ -24,7 +24,7 @@ namespace EmployeeLog.Data.DataContext
         }
 
 
-        public DbSet<Employee> Employees { get; set; }
+        public DbSet<Entities.Employee> Employees { get; set; }
 
         public DbSet<Client> Clients { get; set; }
 

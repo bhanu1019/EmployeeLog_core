@@ -5,8 +5,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Employee\Command\" />
-    <Folder Include="Employee\Query\" />
+    <Folder Include="Client\Command\" />
+    <Folder Include="Client\Query\" />
+    <Folder Include="Project\Command\" />
+    <Folder Include="Project\Query\" />
+    <Folder Include="WorkItems\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EmployeeLog.Domain\EmployeeLog.Domain.csproj" />
   </ItemGroup>
 
 </Project>

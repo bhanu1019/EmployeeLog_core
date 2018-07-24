@@ -19,6 +19,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\EmployeeLog.Data\EmployeeLog.Data.csproj" />
+    <ProjectReference Include="..\EmployeeLog.Domain\EmployeeLog.Domain.csproj" />
+    <ProjectReference Include="..\EmployeeLog.Services\EmployeeLog.Services.csproj" />
   </ItemGroup>
 
 </Project>
