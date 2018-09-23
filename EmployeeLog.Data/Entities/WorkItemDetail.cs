@@ -13,5 +13,7 @@ namespace EmployeeLog.Data.Entities
         public string WorkLog { get; set; }
 
         public int WorkHours { get; set; }
+
+        public WorkItem WorkItem { get; set; }
     }
 }

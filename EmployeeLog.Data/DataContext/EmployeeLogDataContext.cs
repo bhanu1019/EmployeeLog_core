@@ -20,7 +20,8 @@ namespace EmployeeLog.Data.DataContext
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<WorkItemDetail>().HasKey(x => new { x.WorkItemID, x.WorkDate }); 
+            modelBuilder.Entity<WorkItemDetail>().HasKey(x => new { x.WorkItemID, x.WorkDate });
+            modelBuilder.Entity<EmployeeRole>().HasKey(x => new { x.EmployeeID, x.RoleID }); 
         }
 
 
@@ -35,5 +36,9 @@ namespace EmployeeLog.Data.DataContext
         public DbSet<WorkItemDetail> WorkItemDetails { get; set; }
 
         public DbSet<WorkItemStatus> WorkItemStatus { get; set; }
+
+        public DbSet<Role> Role { get; set; }
+
+        public DbSet<EmployeeRole> EmployeeRole { get; set; }
     }
 }

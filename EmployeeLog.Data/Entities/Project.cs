@@ -17,5 +17,7 @@ namespace EmployeeLog.Data.Entities
         public DateTime StartDate { get; set; }
 
         public DateTime ExpectedEndDate { get; set; }
+
+        public Client Client { get; set; }
     }
 }

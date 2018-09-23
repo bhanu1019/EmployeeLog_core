@@ -4,14 +4,16 @@ using EmployeeLog.Data.DataContext;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace EmployeeLog.Data.Migrations
 {
     [DbContext(typeof(EmployeeLogDataContext))]
-    partial class EmployeeLogDataContextModelSnapshot : ModelSnapshot
+    [Migration("20180922121159_EmployeeLog_0922")]
+    partial class EmployeeLog_0922
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

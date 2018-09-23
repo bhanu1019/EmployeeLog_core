@@ -20,5 +20,8 @@ namespace EmployeeLog.Data.Entities
 
         public int TotalWorkHours { get; set; }
 
+        public Project Project { get; set; }
+
+        public WorkItemStatus WorkItemStatus { get; set; }
     }
 }

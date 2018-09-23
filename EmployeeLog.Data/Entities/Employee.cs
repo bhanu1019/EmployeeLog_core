@@ -19,5 +19,7 @@ namespace EmployeeLog.Data.Entities
         public string Image { get; set; }
 
         public bool IsActive { get; set; }
+
+        public EmployeeRole EmployeeRole { get; set; }
     }
 }
